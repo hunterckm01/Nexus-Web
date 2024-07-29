@@ -1,0 +1,8 @@
+.active{
+    color : #e05d5d ;
+    transition: all 300ms; 
+}
+
+.active .round-cir{
+    background-color: #e05d5d;
+}

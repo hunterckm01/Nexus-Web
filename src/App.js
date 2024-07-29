@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Home from './Pages/Home';
+import Work from './Pages/Work';
+import Navbar from './Components/Navbar';
+import { Route , Routes } from 'react-router-dom';
+import FooterSection from './Components/FooterSection';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+
+      {/* NAVBAR SHOULD BE PRESENT IN EVERY SECTION */}
+      <Navbar/>
+
+      {/* Different Routes for navigating between the pages */}
+      <Routes>
+        <Route path = "/" element = {<Home/>}/>
+        <Route path = "/About" element = {<About/>}/>
+        <Route path = "/Contact" element = {<Contact/>}/>
+        <Route path = "/Work" element = {<Work/>}/>
+      </Routes>
+
+      <FooterSection/>
     </div>
   );
 }

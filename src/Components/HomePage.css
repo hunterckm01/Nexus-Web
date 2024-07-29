@@ -1,0 +1,63 @@
+/* import ReviewBg from '../Assests/Home_Assests/cards_bg_img.png' */
+.cards-section {
+    background-image: url('../Assests/Home_Assests/cards_bg_img.png');
+    background-size: cover;
+}
+
+.about-us {
+    user-select: none;
+    color: black;
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    border: 3px solid black;
+    /* background-color: gray; */
+}
+
+.about-us::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.5s;
+}
+
+.about-us:hover::before {
+    transform: scaleX(1);
+    font-weight: 700;
+}
+
+.about-us:hover {
+    color: #fff;
+    font-weight: 700;
+}
+
+.animate-circle {
+    animation: 2s ease-in-out 0.2s infinite circle;
+    position: relative;
+}
+
+@keyframes circle {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-62px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
