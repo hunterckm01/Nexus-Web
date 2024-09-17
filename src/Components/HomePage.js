@@ -100,12 +100,12 @@ const HomePage = () => {
 
 
       {/* Cards Review Section */}
-      <div className='flex flex-col items-center mt-[100px] ='>
-        <div className='flex flex-col items-start mx-auto w-full max-w-[1192px]  z-[2]'>
+      <div className='flex flex-col items-center mt-[100px] '>
+        <div className='flex flex-col items-start mx-auto  w-full max-w-[1192px]  z-[2]'>
           <div className="flex items-center justify-center px-[26px] xl:w-[68px] xl:h-[68px] bg-[#e05d5d] rounded-full border-[9px]  border-white animate-circle"/>
         </div>
 
-        <div className=' flex items-center justify-center mt-[-34px] py-[50px] xl:h-[524px] w-full cards-section '>
+        <div className=' flex items-center justify-center overflow-y-hidden mt-[-34px] py-[50px] xl:h-[524px] w-full cards-section '>
           <div className='flex justify-center mt-[20px] mx-auto max-w-[1192px] w-full '>
             <div className='flex flex-col gap-[60px] w-full '>
               <div className='flex items-start justify-between w-full ml-[8px]'>
