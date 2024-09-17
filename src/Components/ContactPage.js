@@ -41,8 +41,8 @@ const ContactPage = () => {
     <div>
       {/* HEADER DOWN SECTION */}
       <div className='w-full justify-center mt-[54px]'>
-        <div className='max-w-[1192px] w-full mx-auto h-[696px] '>
-          <div className='py-[122px] px-[50px] h-full w-full relative rounded-[90px] bg-[#e5eeff] '>
+        <div className='sm:max-w-[90%] xl:max-w-[1192px] w-full mx-auto h-[696px] '>
+          <div className='sm:py-[100px] sm:px-[30px] xl:py-[122px] xl:px-[50px] h-full w-full relative rounded-[90px] bg-[#e5eeff] '>
            <div className='lgImg h-full w-full flex items-center '>
             <div className='items-center w-full flex flex-col gap-[50px]'>
               <p className='text-[50px] font-semibold'>Get in <span className='text-[#e05d5d]'> touch </span> </p>
@@ -54,7 +54,7 @@ const ContactPage = () => {
       </div>
 
       {/* FORM DOWN SECTION */}
-      <div className='w-full max-w-[1192px] mx-auto mt-[100px]'>
+      <div className='w-full sm:max-w-[90%] xl:max-w-[1192px] mx-auto mt-[100px]'>
         <div className='w-full flex sm:flex-col lg:flex-row lg:items-center sm:items-center gap-[40px]'>
           <div className='shadow-lg flex flex-col items-start gap-[22px] bg-white rounded-[20px] py-[72px] pl-[90px] pr-[56px] '>
             <div className='flex flex-col lg:items-start sm:items-center'>  
@@ -74,7 +74,7 @@ const ContactPage = () => {
                 <textarea required placeholder ='Your Message' name = "msg" id = "msg" value = {contactForm.msg}  
                 onChange = {changeHandler} className='flex items-center justify-center text-[#b6b6b6] font-bold rounded-[6px] bg-[#f6f6f6] pl-[18px] pt-[18px] pb-[34px] pr-[34px] min-h-[174px] w-full'></textarea>
                 
-                <button onSubmit = {submitForm} className='flex items-center justify-center gap-[12px] text-[20px] text-center rounded-[24px] bg-[#27a953] px-[34px] py-[10px] font-semibold hover:bg-[#1c8740] transition-all w-[20%]'>
+                <button onSubmit = {submitForm} className='flex items-center justify-center gap-[12px] text-[20px] text-center rounded-[24px] bg-[#27a953] px-[14px] py-[10px] font-semibold hover:bg-[#1c8740] transition-all w-[20%]'>
                   <div className='text-white'>Send</div>
                 <RiSendPlaneFill className='text-white' />
                 </button>
